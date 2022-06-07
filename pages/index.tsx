@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { H1 } from '../components/atoms'
 import styles from '../styles/Home.module.css'
+import HomePage from './HomePage'
 
 const Home: NextPage = () =>  (
-    <H1>Space Tourism</H1>
+    <HomePage/>
   )
 
 
