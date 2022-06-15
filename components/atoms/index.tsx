@@ -69,7 +69,10 @@ export const SubHeading2 = styled.h6`
   color: #FFFFFF;
 `
 
-export const NavText = styled.p`
+export const NavText = styled.span`
+  text-transform: uppercase;
+  margin: 0 48px;
+  padding: 39px 0;
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
