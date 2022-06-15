@@ -9,6 +9,7 @@ export const H1 = styled.h1`
   font-size: 150px;
   line-height: 172px;
   color: ${props => props.color || colors.PRIMARY};
+  margin: 0 0 24px 0;
 `
 
 export const H2 = styled.h2`
@@ -48,6 +49,7 @@ export const H5 = styled.h5`
   line-height: 34px;
   letter-spacing: 4.725px;
   color: ${props => props.color || colors.PRIMARY};
+  margin: 0 0 24px 0;
 `
 export const SubHeading1 = styled.h6`
   font-family: 'Bellefair';
