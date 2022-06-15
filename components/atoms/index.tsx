@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { colors } from '../designSystem'
 
 export const H1 = styled.h1`
   font-family: 'Bellefair';
@@ -7,7 +8,8 @@ export const H1 = styled.h1`
   font-weight: 400;
   font-size: 150px;
   line-height: 172px;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
+  margin: 0 0 24px 0;
 `
 
 export const H2 = styled.h2`
@@ -16,7 +18,7 @@ export const H2 = styled.h2`
   font-weight: 400;
   font-size: 100px;
   line-height: 115px;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
 export const H3 = styled.h3`
@@ -26,7 +28,7 @@ export const H3 = styled.h3`
   font-size: 56px;
   line-height: 64px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
 export const H4 = styled.h4`
@@ -36,7 +38,7 @@ export const H4 = styled.h4`
   font-size: 32px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
 export const H5 = styled.h5`
@@ -46,7 +48,8 @@ export const H5 = styled.h5`
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 4.725px;
-  color: #D0D6F9;
+  color: ${props => props.color || colors.PRIMARY};
+  margin: 0 0 24px 0;
 `
 export const SubHeading1 = styled.h6`
   font-family: 'Bellefair';
@@ -55,7 +58,7 @@ export const SubHeading1 = styled.h6`
   font-size: 28px;
   line-height: 32px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
 export const SubHeading2 = styled.h6`
@@ -66,7 +69,7 @@ export const SubHeading2 = styled.h6`
   line-height: 17px;
   letter-spacing: 2.3625px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
 export const NavText = styled.p`
@@ -76,7 +79,7 @@ export const NavText = styled.p`
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
 export const BodyText = styled.p`
@@ -85,6 +88,6 @@ export const BodyText = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: ${props => props.color || colors.PRIMARY};
 `
 
