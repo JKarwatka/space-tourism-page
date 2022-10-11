@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import { BodyText, H1, H4, H5 } from '../../components/atoms'
 import { colors } from '../../components/designSystem'
 import { MainButton, PageBackground, PageContainer, ContentContainer, ButtonContainer } from './atoms'
@@ -13,7 +14,7 @@ const HomePage: NextPage = () =>  (
         <BodyText color={colors.TERNARY}>{homePageContent.BODY}</BodyText>
       </ContentContainer>
       <MainButton>
-        <H4 color={colors.SECONDARY}>{homePageContent.BUTTON}</H4>
+        <Link href="/destination"><a><H4 color={colors.SECONDARY}>{homePageContent.BUTTON}</H4></a></Link>
       </MainButton>
     </PageContainer>
   </PageBackground>
