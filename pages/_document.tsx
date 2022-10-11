@@ -10,7 +10,6 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet"/>
         </Head>
       <body>
-        <NavBar/>
         <Main />
         <NextScript />
       </body>

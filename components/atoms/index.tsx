@@ -72,19 +72,6 @@ export const SubHeading2 = styled.h6`
   color: ${props => props.color || colors.PRIMARY};
 `
 
-export const NavText = styled.span`
-  text-transform: uppercase;
-  margin: 0 48px;
-  padding: 39px 0;
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-  color: ${props => props.color || colors.PRIMARY};
-`
-
 export const BodyText = styled.p`
   font-family: 'Barlow';
   font-style: normal;

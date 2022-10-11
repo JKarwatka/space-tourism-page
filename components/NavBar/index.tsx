@@ -1,19 +1,28 @@
+import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
-import { NavText } from '../atoms'
-import { ItemsContainer, NavBarContainer, NavBarLine } from './atoms'
+import { NavItemsContainer, Logo, NavBarContainer, NavBarLine, NavItem } from './atoms'
 
 export const NavBar = () => {
   return (
     <NavBarContainer>
-      <Image  src="/assets/homepage/logo.svg" alt="me" width="48" height="48"/>
+      <Logo src="/assets/homepage/logo.svg" alt="me" width="48px" height="48px"/>
       <NavBarLine/>
-      <ItemsContainer>
-        <NavText>Homes</NavText>
-        <NavText>Destination</NavText>
-        <NavText>Crew</NavText>
-        <NavText>Technology</NavText>
-      </ItemsContainer>
+      <NavItemsContainer>
+        <Link href='/'>
+          <NavItem>Home</NavItem>
+        </Link>
+        <Link href='/destination'>
+          <NavItem>Destination</NavItem>
+        </Link>
+        <Link href='/crew'>
+          <NavItem>Crew</NavItem>
+        </Link>
+        <Link href='/technology'>
+          <NavItem>Technology</NavItem>
+        </Link>
+      </NavItemsContainer>
     </NavBarContainer>
   )
 }
+
+export default NavBar
