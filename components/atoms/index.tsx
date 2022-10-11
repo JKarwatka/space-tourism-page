@@ -7,6 +7,7 @@ export const H1 = styled.h1`
   font-style: normal;
   font-weight: 400;
   font-size: 150px;
+  text-transform: uppercase;
   line-height: 172px;
   color: ${props => props.color || colors.PRIMARY};
   margin: 0 0 24px 0;
@@ -17,6 +18,7 @@ export const H2 = styled.h2`
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
+  text-transform: uppercase;
   line-height: 115px;
   color: ${props => props.color || colors.PRIMARY};
 `
@@ -46,6 +48,7 @@ export const H5 = styled.h5`
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
+  text-transform: uppercase;
   line-height: 34px;
   letter-spacing: 4.725px;
   color: ${props => props.color || colors.PRIMARY};

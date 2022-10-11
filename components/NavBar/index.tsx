@@ -5,7 +5,7 @@ import { NavItemsContainer, Logo, NavBarContainer, NavBarLine, NavItem } from '.
 export const NavBar = () => {
   return (
     <NavBarContainer>
-      <Logo src="/assets/homepage/logo.svg" alt="me" width="48px" height="48px"/>
+      <Logo src="/assets/logo.svg" alt="me" width="48px" height="48px"/>
       <NavBarLine/>
       <NavItemsContainer>
         <Link href='/'>

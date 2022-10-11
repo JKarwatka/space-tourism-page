@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components'
 
+
+type PageBackgroundProps = {
+  backgroundPath: string
+}
 export const PageBackground = styled.div`
   width: 100%;
   min-height: 100vh;
-  background-image: url("/assets/homepage/background.jpg");
+  background-image: url(${({backgroundPath}: PageBackgroundProps) => backgroundPath});
   background-position: center center;
   background-size: cover;
 `
